@@ -9,9 +9,9 @@ FROM [Nashville Housing Project]..[Nashville Housing];
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
---Populate Property Address data
-	--UniquelID's with the same ParcellID's have the same PropertyAddress
-	--Populate the null PropertyAddress's which have the same ParcelID
+--Populate Property Address data (UniquelID's with the same ParcellID's have the same PropertyAddress)
+	
+--Populate the null PropertyAddress's which have the same ParcelID
 
 UPDATE N1
 SET PropertyAddress = ISNULL(N1.PropertyAddress, N2.PropertyAddress)
