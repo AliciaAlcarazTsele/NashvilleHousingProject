@@ -22,6 +22,7 @@ JOIN [Nashville Housing Project]..[Nashville Housing] N2
 WHERE N1.PropertyAddress IS NULL;
 
 --Check if there are any more nulls
+
 SELECT * 
 FROM [Nashville Housing Project]..[Nashville Housing]
 WHERE PropertyAddress IS NULL;
